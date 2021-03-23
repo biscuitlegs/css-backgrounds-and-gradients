@@ -1,0 +1,108 @@
+/*Hero*/
+
+#hero {
+    position: relative;
+    background-color: rgb(236, 119, 119);
+    height: 538px;
+}
+
+#hero-nav {
+    position: relative;
+    width: 1000px;
+    top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr) 200px;
+    background: rgb(163, 223, 200);
+}
+
+#hero-nav > * {
+    border-left: 1px solid black;
+    padding: 5px;
+}
+
+#hero-nav:first-child {
+    border-right: 1px solid black;
+    border-left: none;
+}
+
+#hero-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-width: 1024px;
+    margin: 0 auto;
+}
+
+#hero-header > * {
+    margin: 0 auto;
+}
+
+#hero-header .title {
+    font-size: 4em;
+    margin-bottom: 1em;
+    width: 900px;
+}
+
+#hero-header .subtitle {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    width: 1000px;
+}
+
+#hero-header .content {
+    font-size: 1.5em;
+    width: 1000px;
+}
+
+/*Main Nav*/
+
+#main-nav {
+    display: flex;
+    width: 100%;
+    min-width: 1024px;
+    height: 200px;
+}
+
+#main-nav > * {
+    flex: 1 0 25%;
+    background: rgb(168, 168, 168);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid black;
+}
+
+/*Footer*/
+
+footer {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    justify-items: left;
+    width: 100%;
+    min-width: 1024px;
+    font-size: 10px;
+    text-align: center;
+    text-align: left;
+    padding: 20px 0px;
+    background: rgb(162, 162, 245);
+}
+
+footer > * {
+    width: 100%;
+}
+
+footer .left {
+    grid-column: 1;
+}
+
+footer .right {
+    grid-column: 2;
+}
